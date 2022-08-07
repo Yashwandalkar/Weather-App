@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfTkofeSOsLkt6btupkw5dgCTJqgIwdlyiaQ&usqp=CAU" type="image/gif" sizes="16x16">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQene5Wh-7H0FtvdoIMtyXZgrmD6aXXD5i9NA&usqp=CAU" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- //////////////////////////////////////FAVICON///////////////////////////////////// -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- //////////////////////// ICON /////////////////////////////////////// -->
+
+    <script src="https://kit.fontawesome.com/a7847b4997.js" crossorigin="anonymous"></script>
+
+    <!-- ////////////////////////  GOOGLE FONT  //////////////////////////////////////////// -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <div class="view">
-        <h2>Weather App</h2>
-        <form>
-            <div class="search">
-                <input placeholder="Enter a Location" type="text" id="query">
-                <button>Submit</button>
+    <div class="Block">
+        <div class="search">
+            <input type="text" placeholder="Enter a city name" class="search-bar">
+            <button><i class="fa-solid fa-magnifying-glass-location"></i></button>
+        </div>
+        <div class="weather loading">
+            <h2 class="city">Weather in India</h2>
+            <h1 class="temp">37&#176;C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/01n@2x.png" class="icon">
+                <div class="description">Cloudy</div>
             </div>
-        </form>
-        <div class="details">
-            <div class="img">
-                <img src="" alt="erather-icon" class="icon">
-            </div>
-            <div class="weather">
-                <div class="location">
-                    <span class="materal-icons">
-                        place
-                    </span>
-                    <h3>Location</h3>
-                    <span class="name"></span>
-                </div>
-                <div class="temperature">
-                    <span class="materal-icons">
-                        thermostat
-                    </span>
-                    <h3>temperature</h3>
-                    <span class="temp"></span>
-                </div>
-                <div class="description">
-                    <span class="materal-icons">
-                        air
-                    </span>
-                    <h3>Wind Speed</h3>
-                    <span class="desc"></span>
-                </div>
-            </div>
+            <div class="humidity">Humidity : 40% </div>
+            <div class="wind"> Wind Speed 6.2 km/h</div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script defer src="./script.js"></script>
 </body>
+
 </html>
